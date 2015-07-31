@@ -7,4 +7,7 @@ function AddressBook(){
 		return this.ContactList[index];
 	}
 	
+	AddressBook.prototype.deleteContact=function(index){
+		this.ContactList.splice(index,1);
+	}
 }
